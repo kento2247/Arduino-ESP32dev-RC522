@@ -5,7 +5,7 @@
 #include<Adafruit_SSD1306.h>
 #define UID "5d6b6889" // 取得した識別子を記述
 String Message;
-String NUMBER;
+int NUMBER;
 int mode;//A0可変抵抗器、３モード設定
 int pointDeduct = 1;//A1ポイント減算
 int pointAdd = 1;//A2ポイント加算
@@ -43,7 +43,7 @@ void setup() {
 
 
   Message = "No mode";
-  NUMBER = "000";
+  NUMBER = 000;
 }
 
 void resetDisplay () {
